@@ -1,6 +1,6 @@
 <rg-pagination>
 
-  <div class="pagination">
+  <div class="c-pagination">
     <div class="c-pagination__controls c-pagination__controls--backward">
       <button class="c-pagination__control" disabled="{ opts.pagination.page <= 1 }" onclick="{ first }">«</button>
       <button class="c-pagination__control" disabled="{ opts.pagination.page <= 1 }" onclick="{ back }">‹</button>
