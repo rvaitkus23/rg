@@ -2,17 +2,17 @@
 
 	<input type="{ opts.select.filter ? 'search' : 'text' }"
 				 name="selectfield"
-				 class="field"
+				 class="c-field"
 				 placeholder="{ opts.select.placeholder }"
 				 onkeydown="{ navigate }"
 				 oninput="{ filterOptions }"
 				 onfocus="{ open }"
 				 readonly="{ !opts.select.filter }">
 
-	<ul class="menu menu--high" if="{ opts.select.isvisible }">
+	<ul class="c-menu menu--high" if="{ opts.select.isvisible }">
 		<li each="{ options }" no-reorder
 		     onclick="{ parent.select }"
-				 class="menu__item { 'menu__item--active': selected, 'menu__item--disabled': disabled, 'menu__item--hover': active }">
+				 class="c-menu__item { 'c-menu__item--active': selected, 'c-menu__item--disabled': disabled, 'c-menu__item--hover': active }">
 			{ text }
 		</li>
 	</ul>
