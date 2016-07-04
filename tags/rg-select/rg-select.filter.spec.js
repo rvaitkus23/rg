@@ -51,19 +51,19 @@ describe('rg-select', function () {
 	})
 
 	it('opens the menu on focus', function () {
-		$('rg-select .menu').length.should.equal(0)
-		$('rg-select .field').focus()
-		$('rg-select .menu').length.should.equal(1)
+		$('rg-select .c-menu').length.should.equal(0)
+		$('rg-select .c-field').focus()
+		$('rg-select .c-menu').length.should.equal(1)
 	})
 
 	it('adding text to box filters the options list', function () {
-		$('rg-select .menu').length.should.equal(0)
-		$('rg-select .field').focus()
-		$('rg-select .menu').length.should.equal(1)
-		$('rg-select .menu__item').length.should.equal(4)
+		$('rg-select .c-menu').length.should.equal(0)
+		$('rg-select .c-field').focus()
+		$('rg-select .c-menu').length.should.equal(1)
+		$('rg-select .c-menu__item').length.should.equal(4)
 		spyOnOpen.should.have.been.calledOnce
-		$('rg-select .field').val('m').trigger('input')
+		$('rg-select .c-field').val('m').trigger('input')
 		spyOnFilter.should.have.been.calledOnce
-		$('rg-select .menu__item').length.should.equal(2)
+		$('rg-select .c-menu__item').length.should.equal(2)
 	})
 })
